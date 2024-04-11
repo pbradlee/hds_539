@@ -82,11 +82,10 @@ a {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #c5cf2a; color: black;}
 
 .home-mission {
   display: block;
-  background-color: #c5cf2a;
-  color: black;
-  height: 100px;
+  background-color: #f5d9ff;
+  height: 300px;
 }

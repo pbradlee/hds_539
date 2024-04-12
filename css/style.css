@@ -32,7 +32,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 25px;
-  padding: 10px;
   background-color: #145591;
   color: white;
   align-items: center;

@@ -27,6 +27,10 @@ body {
     font-size: 13px;
 }
 
+.utility-menu a:hover {
+  border-bottom: 2px solid white;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+<body>
+    <div id="skip"><a href = "#main">Skip to Main Content</a></div>
+    <header>
+        <nav>
+            <div class="utility-menu">
+                <a href="https://hd-mi.client.renweb.com/pw/" target="blank">Parent Portal</a>
+                <a href="https://www.google.com/calendar/embed?src=sqs08mil2piqi10f03gi41k7as%40group.calendar.google.com" target="blank">Calendar</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="navbar">
+                <div>
+                    <img src="images/hds_logo_white.png " width="400" alt="Hebrew Day School Logo">
+                </div>
+                <div>
+                <div class="dropdown">
+                    <button class="dropbtn">About</button>
+                    <div class="dropdown-content">
+                        <a href="#">Mission & Vision</a>
+                        <a href="#">Staff & Faculty</a>
+                        <a href="#">Board of Trustees</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="admissions.html">
+                        <button class="dropbtn">Admissions</button>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Admissions Process</a>
+                        <a href="#">Tuition & Financial Aid</a>
+                        <a href="#">Apply Online</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="academics.html">
+                        <button class="dropbtn">Academics</button>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="general-studies.html">General Studies</a>
+                        <a href="judaic-studies.html">Judaic Studies</a>
+                        <a href="enrichment.html">Enrichment</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="community.html">
+                        <button class="dropbtn">Community</button>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Parent Connection</a>
+                        <a href="#">Shop Spirit Wear</a>
+                        <a href="#">Jewish Ann Arbor</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="give.html">
+                        <button class="dropbtn">Give</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </nav>
+        <div>
+            <img src="images/homepage_highlight_image_1.jpeg" alt="Kids at school" tabindex="0">
+        </div>
+        <div class="home-mission">
+            <h1>Contact</h1>
+        </div>
+</header>
+<main id="main">
+    <form id="contact-form" action="https://formspree.io/f/xrgnarjl" method="POST">
+        <div>
+            <select name="case" id="casetype">
+                <option value="blank"></option>
+                <option value="value1">Admissions</option>
+                <option value="value1">Donations</option>
+                <option value="value1">General</option>
+            </select>
+        </div>
+        <div id="name">
+            <div>
+                <label for="first-name">First Name</label><br>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div>
+                <label for="last-name">Last Name</label><br>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+        </div>
+        <div id="email">
+            <div>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="confirm-email">Confirm Email</label><br>
+                <input type="text" id="confirm-email" name="confirm-email">
+            </div>
+        </div>
+        <div id="phone">
+            <div>
+                <label for="phone">Phone Number</label><br>
+                <input type="text" id="phone" name="phone">
+            </div>
+        </div>
+        <div id="address">
+            <div>
+                <label for="street-address">Street Address</label><br>
+                <input type="text" id="street-address" name="street-address">
+            </div>
+            <div id="city-state">
+            <div>
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city">
+            </div>
+            <div>
+                <label for="state">State</label><br>
+                <input type="text" id="state" name="state">
+            </div>
+            <div>
+                <label for="zip">Zip / Postal Code</label><br>
+                <input type="text" id="zip" name="zip">
+            </div>
+            <div>
+                <label for="country">Country</label><br>
+                <input type="text" id="country" name="country">
+            </div>
+        </div>
+        <div id="students">
+            <div>
+                <label for="students">Student Name(s)</label><br>
+                <input type="text" id="student" name="student">
+            </div>
+        </div>
+        <div id="grade">
+            <div>
+                <label for="grade">Current Grade Level of Student(s)</label><br>
+                <input type="text" id="grade" name="grade">
+            </div>
+        </div>
+        <div id="school">
+            <div>
+                <label for="school">Current School if Applicable</label><br>
+                <input type="text" id="school" name="school">
+            </div>
+        </div>
+        </div>
+            <label for="message">Comments / Questions</label>
+            <textarea id="message" name="message"></textarea>
+            <!-- <label for="image">Upload Image:</label><br>
+            <input type="file" id="image" name="image"><br><br> -->
+            <button id="submit" type="submit" value="Submit">Submit</button>
+            <!-- <button type="reset">Reset</button> -->
+      </form>
+</main>
+  
+  <footer>
+  </footer>
+</body>
+</html>

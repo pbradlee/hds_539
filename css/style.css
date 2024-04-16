@@ -97,3 +97,75 @@ a {
   background-color: #d3e4ff;
   height: 300px;
 }
+
+/* Formatting Contact Form */
+form {
+  border: 1px solid #a6a6a6;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 60px;
+  color: #25042c;
+  background: #f4f3f3;
+}
+
+label {
+  display:inline-block;
+  margin: 0 0 10px 0;
+  width:100%;
+}
+
+input, #casetype {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: white;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+}
+
+input:focus, #message:focus {
+  outline: 4px solid rgb(91, 64, 225);
+}
+
+div .dm {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+button {
+  display: inline-block;
+  text-align:center;
+  background-color: rgb(91, 64, 225);
+  border: 1px solid black;
+  padding: 6px;
+  font-size: 10px;
+  margin-bottom: 20px;
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover, button1:hover {
+  background-color: rgb(63, 44, 156);
+}
+
+#name, #email, #city-state, #phone, #casetype {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+#message {
+  border: 1px solid black;
+  height: 120px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: white;
+  /* margin-bottom: 20px; */
+  border-radius: 8px;
+}
+
+/* END Formatting Contact Form */

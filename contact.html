@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Page</title>
 </head>
 <body>
     <div id="skip"><a href = "#main">Skip to Main Content</a></div>
@@ -20,13 +21,14 @@
                 <a href="https://www.google.com/calendar/embed?src=sqs08mil2piqi10f03gi41k7as%40group.calendar.google.com" target="blank">Calendar</a>
                 <a href="contact.html">Contact</a>
             </div>
-            <div class="navbar">
-                <div>
+            <div class="navbar topnav">
+                <!-- <div>
                     <img src="images/hds_logo_white.png " width="400" alt="Hebrew Day School Logo">
-                </div>
-                <div>
+                </div> -->
+            <a href="index.html" class="active"><img class="logo" src="images/hds_logo_white.png " alt="Hebrew Day School Logo"></a>
+            <div id="myLinks">
                 <div class="dropdown">
-                    <button class="dropbtn">About</button>
+                    <a href="#" class="dropbtn">About</a>
                     <div class="dropdown-content">
                         <a href="#">Mission & Vision</a>
                         <a href="#">Staff & Faculty</a>
@@ -35,9 +37,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="admissions.html">
-                        <button class="dropbtn">Admissions</button>
-                    </a>
+                    <a href="#" class="dropbtn">Admissions</a>
                     <div class="dropdown-content">
                         <a href="#">Admissions Process</a>
                         <a href="#">Tuition & Financial Aid</a>
@@ -45,19 +45,15 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="academics.html">
-                        <button class="dropbtn">Academics</button>
-                    </a>
-                    <div class="dropdown-content">
+                    <a href="academics.html" class="dropbtn">Academics</a>
+                    <!-- <div class="dropdown-content">
                         <a href="general-studies.html">General Studies</a>
                         <a href="judaic-studies.html">Judaic Studies</a>
                         <a href="enrichment.html">Enrichment</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="dropdown">
-                    <a href="community.html">
-                        <button class="dropbtn">Community</button>
-                    </a>
+                        <a href="#" class="dropbtn">Community</a>
                     <div class="dropdown-content">
                         <a href="#">Parent Connection</a>
                         <a href="#">Shop Spirit Wear</a>
@@ -65,11 +61,12 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="give.html">
-                        <button class="dropbtn">Give</button>
-                    </a>
+                    <a href="give.html" class="dropbtn">Give</a>
                 </div>
             </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         </div>
         </nav>
         <div>
@@ -165,8 +162,17 @@
             <!-- <button type="reset">Reset</button> -->
       </form>
 </main>
-  
   <footer>
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 </body>
 </html>

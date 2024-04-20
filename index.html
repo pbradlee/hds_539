@@ -27,13 +27,13 @@
                 </div> -->
             <a href="index.html" class="active"><img class="logo" src="images/hds_logo_white.png " alt="Hebrew Day School Logo"></a>
             <div id="myLinks">
-                <div class="dropdown">
-                    <a href="#" class="dropbtn">About</a>
-                    <div class="dropdown-content">
-                        <a href="#">Mission & Vision</a>
-                        <a href="staff-faculty.html">Staff & Faculty</a>
-                        <a href="#">Board of Trustees</a>
-                        <a href="#">Careers</a>
+                <div class="dropdown" tabindex="0">
+                    <a href="#" class="dropbtn" tabindex="0">About</a>
+                    <div class="dropdown-content" tabindex="0">
+                        <a href="#" tabindex="0">Mission & Vision</a>
+                        <a href="staff-faculty.html" tabindex="0">Staff & Faculty</a>
+                        <a href="#" tabindex="0">Board of Trustees</a>
+                        <a href="#" tabindex="0">Careers</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -72,14 +72,23 @@
         <div>
             <img src="images/banners/homepage-banner.jpg" alt="Kids at school" tabindex="0">
         </div>
-        <div class="home-mission">
-            <h1>Contact</h1>
+        <div>
+            <h1>Welcome to Hebrew Day School</h1>
         </div>
 </header>
 <main id="main">
+
+    <p class="home-philosophy">Through individualized instruction, great teacher-to-student ratios, and attentive support systems in both Hebrew and general studies, we instill a priceless gift in each student: a love of learning.  HDS graduates are academically skilled, confident in their talents, grounded in their identities, and poised to contribute to the world.</p>
+    <div>
+        <iframe class="home-video" width="560" height="315" src="https://www.youtube.com/embed/OMi8aRTqJPA?si=_CUVahDNCXGH4CDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 </main>
-  <footer>
-  </footer>
+<footer>
+    <div class="footer">
+    </div>
+</footer>
+    <!-- Back to Top -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">TOP</button>
   <script>
     function myFunction() {
       var x = document.getElementById("myLinks");

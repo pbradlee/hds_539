@@ -51,6 +51,8 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
+  width: 80%;
+  margin: auto;
 }
 
 .home-philosophy {

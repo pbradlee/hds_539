@@ -430,11 +430,6 @@ div .dm {
   color: #d6e03c
 }
 
-#name, #email, #city-state, #phone, #casetype {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-}
 
 #message {
   border: 1px solid black;
@@ -474,6 +469,14 @@ div .dm {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+/*   FORM CHANGES */
+  #name, #email, #city-state, #phone, #casetype {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+  
 }
 /* Desktop */
 @media screen and (min-width: 992px) {

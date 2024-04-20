@@ -254,11 +254,14 @@ img.logo {
 
 /* Mix buttons on Academics Page */
 .mix-buttons {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   justify-content: center;
-  gap: 25px;
-  padding: 10px 20px 10px 10px;
+  /* gap: 25px; */
+  /* padding: 10px 20px 10px 10px; */
   color: white;
   font-size: 13px;
 }
@@ -477,6 +480,16 @@ div .dm {
   gap: 25px;
 }
   
+  .mix-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+  }
 }
 /* Desktop */
 @media screen and (min-width: 992px) {
@@ -485,6 +498,17 @@ div .dm {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     justify-items: center;
+  }
+
+  .mix-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
   }
 }
 

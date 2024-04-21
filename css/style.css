@@ -187,6 +187,13 @@ img.logo {
 /* END Hamburger Menu */
 /* ----- END NAV BAR ----- */
 
+/* TEST NAV */
+/* Focus styles */
+a:focus, button:focus, .dropbtn:focus, .dropdown-content a:focus {
+  outline: 2px solid blue;
+}
+/* TEST NAV */
+
 /* ----- HOME PAGE ----- */
 .home-video {
   display: block;
@@ -544,6 +551,45 @@ div .dm {
     position: relative;
     z-index: 1;
   }
+
+  .navbar .icon {
+        display: block;
+    }
+
+    #myLinks.hide-menu {
+        display: none;
+    }
+
+    #myLinks {
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropbtn:focus + .dropdown-content,
+    .dropdown-content:hover {
+        display: block;
+    }
+
+    /* TEST */
+
+    /* END TEST */
   /*
   a {
       color:white;
@@ -602,7 +648,10 @@ div .dm {
     }
 
   .topnav #myLinks {
-    display: inline-block !important;
+    /* display: inline-block !important; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
 /* ----- END MEDIA QUERIES ----- */

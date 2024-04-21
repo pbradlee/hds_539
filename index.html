@@ -26,8 +26,8 @@
                     <img src="images/hds_logo_white.png " width="400" alt="Hebrew Day School Logo">
                 </div> -->
             <a href="index.html" class="active"><img class="logo" src="images/hds_logo_white.png " alt="Hebrew Day School Logo"></a>
-            <div id="myLinks">
-                <div class="dropdown" tabindex="0">
+            <div id="myLinks" class="hide-menu">
+                <!-- <div class="dropdown" tabindex="0">
                     <a href="#" class="dropbtn" tabindex="0">About</a>
                     <div class="dropdown-content" tabindex="0">
                         <a href="#" tabindex="0">Mission & Vision</a>
@@ -35,7 +35,20 @@
                         <a href="#" tabindex="0">Board of Trustees</a>
                         <a href="#" tabindex="0">Careers</a>
                     </div>
+                </div> -->
+
+                <!-- TEST NAV -->
+                <div class="dropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">About</button>
+                    <div class="dropdown-content">
+                        <a href="#">Mission & Vision</a>
+                        <a href="staff-faculty.html">Staff & Faculty</a>
+                        <a href="#">Board of Trustees</a>
+                        <a href="#">Careers</a>
+                    </div>
                 </div>
+                <!-- END TEST NAV -->
+
                 <div class="dropdown">
                     <a href="#" class="dropbtn">Admissions</a>
                     <div class="dropdown-content">
@@ -53,19 +66,22 @@
                     </div> -->
                 </div>
                 <div class="dropdown">
-                        <a href="#" class="dropbtn">Community</a>
-                    <div class="dropdown-content">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Community</button>
+                        <!-- <a href="#" class="dropbtn">Community</a> -->
+                    <!-- <div class="dropdown-content">
                         <a href="#">Parent Connection</a>
                         <a href="#">Shop Spirit Wear</a>
                         <a href="#">Jewish Ann Arbor</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="dropdown">
                     <a href="#" class="dropbtn">Give</a>
                 </div>
             </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Open menu">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" onclick="toggleMenu()" aria-label="Open menu">
             <i class="fa fa-bars"></i>
+            <!-- <button class="icon" onclick="toggleMenu()" aria-label="Open menu">
+                <i class="fa fa-bars"></i> -->
         </a>
         </div>
         </nav>
@@ -99,5 +115,9 @@
       }
     }
     </script>
+
+    <!-- Dropdown -->
+    <script src="js/dropdown.js"></script>
+
 </body>
 </html>

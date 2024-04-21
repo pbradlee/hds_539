@@ -205,8 +205,15 @@ a:focus, button:focus, .dropbtn:focus, .dropdown-content a:focus {
 
 /* ----- FOOTER ----- */
 .footer {
+  display: flex;
   background-color: #145591;
-  height: 100px;
+  color: #c5cf2a;
+  justify-content: center;
+  }
+
+.address-footer {
+  padding: 30px;
+  text-align: center;
 }
 /* ----- FOOTER END ----- */
 

@@ -51,8 +51,8 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
-  width: 80%;
-  margin: auto;
+  /* width: 80%;
+  margin: auto; */
 }
 
 .home-philosophy {
@@ -234,12 +234,19 @@ img.logo {
   justify-items: center;
 }
 
+.subject-description {
+  width: 80%;
+  margin: auto;
+}
+
 .curriculum-philosophy {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
   padding: 2em;
   justify-items: center;
+  width: 80%;
+  margin: auto;
 }
 
 .container .mix:nth-child(even) {
@@ -289,6 +296,13 @@ img.logo {
 .mixbutton.active {
   background: #145591;
   color: #d6e03c
+}
+
+.mixbutton:focus {
+  outline: none; /* Removes the default focus outline */
+  box-shadow: 0 0 0 3px #d6e03c; /* Adds a high contrast outline */
+  background-color: #0056b3; /* Changes background to a darker color for better visibility */
+  color: white; /* Ensures text color is high contrast against the background */
 }
 /* ----- END ACADEMICS ----- */
 
@@ -342,7 +356,8 @@ img.logo {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -369,6 +384,7 @@ img.logo {
 .bio {
   padding: 20px;
 }
+
 /* ----- END STAFF & FACULTY ---- */
 
 /* ----- CONTACT FORM ----- */

@@ -593,6 +593,10 @@ div .dm {
         display: block;
     }
 
+    img.logo {
+      width: 300px;
+    }
+  
     /* TEST */
 
     /* END TEST */

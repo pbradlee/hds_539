@@ -209,6 +209,7 @@ a:focus, button:focus, .dropbtn:focus, .dropdown-content a:focus {
   background-color: #145591;
   color: #c5cf2a;
   justify-content: center;
+  border-top: 1px solid white;
   }
 
 .address-footer {

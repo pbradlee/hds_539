@@ -649,9 +649,9 @@ div .dm {
 
   .topnav #myLinks {
     /* display: inline-block !important; */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
   }
 }
 /* ----- END MEDIA QUERIES ----- */

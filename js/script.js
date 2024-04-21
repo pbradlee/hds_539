@@ -35,3 +35,13 @@ mixButtons.forEach(function (button) {
 // Simulate click on "All" button to set it as active on page load
 var allButton = document.querySelector('.mixbutton[data-filter="all"]');
 allButton.click();
+
+// Fip Card on Focus
+document.querySelectorAll('.flip-card').forEach(card => {
+  card.addEventListener('focus', function() {
+      this.classList.add('is-flipped');
+  });
+  card.addEventListener('blur', function() {
+      this.classList.remove('is-flipped');
+  });
+});
